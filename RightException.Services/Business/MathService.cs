@@ -1,4 +1,5 @@
 ﻿using RightException.Services.Errors;
+using RightException.Services.Models;
 
 namespace RightException.Services.Business;
 
@@ -19,12 +20,29 @@ public class MathService : IMathService
 
     public int DivideWithRightExceptions(int dividend, int divisor)
     {
-        if (divisor == 0)
+        if (divisor is 0)
         {
             throw new DivisionError("Cannot divide by zero.");
         }
 
         var result = dividend / divisor;
+
+        return result;
+    }
+
+    public ServiceResult<int> DivideUsingResultPattern(int dividend, int divisor)
+    {
+        var result = new ServiceResult<int>();
+
+        if (divisor is 0)
+        {
+            result.Error = new ValidationError { Message = $"The dividend: {dividend} cannot be divided by zero." };
+            return result;
+        }
+
+        var operation = dividend / divisor;
+
+        result.Success = operation;
 
         return result;
     }
