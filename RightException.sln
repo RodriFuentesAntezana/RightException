@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RightException.Api", "RightException.Api\RightException.Api.csproj", "{BD4D5310-F9FB-4982-9677-05AC3B6D3825}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CD2F0DD6-7B91-4F08-A694-CEBA68D1ECBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - API", "01 - API", "{F7AC76DD-A6D5-4107-87E6-6F861605B9F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Business", "02 - Business", "{ACDC3476-A27B-49B8-BC29-A618F514129E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RightException.Services", "RightException.Services\RightException.Services.csproj", "{34F5D2BD-9BA3-44AF-84CA-CD61B2C44F0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD4D5310-F9FB-4982-9677-05AC3B6D3825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD4D5310-F9FB-4982-9677-05AC3B6D3825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD4D5310-F9FB-4982-9677-05AC3B6D3825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD4D5310-F9FB-4982-9677-05AC3B6D3825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F5D2BD-9BA3-44AF-84CA-CD61B2C44F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F5D2BD-9BA3-44AF-84CA-CD61B2C44F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F5D2BD-9BA3-44AF-84CA-CD61B2C44F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F5D2BD-9BA3-44AF-84CA-CD61B2C44F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD4D5310-F9FB-4982-9677-05AC3B6D3825} = {F7AC76DD-A6D5-4107-87E6-6F861605B9F6}
+		{F7AC76DD-A6D5-4107-87E6-6F861605B9F6} = {CD2F0DD6-7B91-4F08-A694-CEBA68D1ECBC}
+		{ACDC3476-A27B-49B8-BC29-A618F514129E} = {CD2F0DD6-7B91-4F08-A694-CEBA68D1ECBC}
+		{34F5D2BD-9BA3-44AF-84CA-CD61B2C44F0A} = {ACDC3476-A27B-49B8-BC29-A618F514129E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AF39CED-D475-41A9-AB81-FDF42675D4F6}
+	EndGlobalSection
+EndGlobal
