@@ -45,4 +45,15 @@ public class MathController(
             return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
         }
     }
+
+    [HttpGet("result-pattern")]
+    public IActionResult DivideUsingResultPattern(int dividend, int divisor)
+    {
+        var result = mathService.DivideUsingResultPattern(dividend, divisor);
+
+        if (result.Error is not null)
+            return BadRequest(result.Error.Message);
+        
+        return Ok(result.Success);
+    }
 }
